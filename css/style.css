@@ -1,0 +1,305 @@
+body {
+    background-color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 4.5em;
+    font-weight: bolder;
+    line-height: 1.05;
+    position: relative;
+    z-index: 1;
+    display: inline;
+  }
+
+  .h1-underline {
+    position: relative;
+    display: inline-block;
+    left: 20px;
+  }
+
+  h2 {
+    font-size: 3.2em;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline;
+  }
+
+  .h2-underline {
+    position: relative;
+    display: inline-block;
+    left: 10px;
+  }
+
+  .underline {
+    position: absolute;
+    right: 0%;
+    top: 38%;
+    display: inline-block;
+    width: 100%;
+    max-width: none;
+  }
+
+  .h2-underline .underline {
+    position: absolute;
+    right: 0%;
+    top: 80%;
+    display: inline-block;
+    width: 100.5%;
+  }
+
+  h3 {
+    font-size: 2.3em;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  button span {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  .container-fluid {
+    padding: 0;
+  }
+
+  .logo {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .btn-primary,
+  .btn-primary:hover,
+  .btn-primary:active,
+  .btn-primary:visited {
+    background-color: rgb(71, 76, 222) !important;
+    font-weight: bold;
+  }
+
+  .btn-secondary,
+  .btn-secondary:hover,
+  .btn-secondary:active,
+  .btn-secondary:visited {
+    background-color: rgb(171, 218, 236) !important;
+    font-weight: bold;
+    color: black;
+    border: 1px solid rgb(171, 218, 236);
+    border-radius: 10px;
+  }
+
+  .form-inline {
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 3px;
+  }
+
+  .form-control {
+    border: 2px solid white;
+  }
+
+
+  .splash {
+    margin-top: 6%;
+    margin-left: 8%;
+    margin-right: 8%;
+    color: rgb(30, 32, 93);
+  }
+
+  .splash img {
+    margin-top: 12%;
+    margin-bottom: 1.5em;
+  }
+
+  .splash p {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    line-height: 1.3;
+  }
+
+  .splash .col-md-5 {
+    max-width: 38%;
+  }
+
+
+  .the-problematics-text {
+    background-image: url(../img/problematics.png);
+    background-size: 100%;
+  }
+
+  .the-problematics-text {
+    padding-top: 25%;
+    padding-bottom: 25%;
+  }
+
+  .the-problematics-text h2 {
+    margin-bottom: 0.4em;
+  }
+
+  .the-problematics-text .col-md-5 {
+    max-width: 39%;
+  }
+
+  
+  .solution {
+    background-color: rgb(251, 202, 161);
+    padding-bottom: 5%;
+  }
+
+  .solution p {
+    line-height: 1.25;
+  }
+
+  .solution h2 {
+    line-height: 1.1;
+    max-width: 40%;
+  }
+
+  .solution .h2-underline h2 {
+    font-size: 1em;
+  }
+
+  .solution .h2-underline{
+    left: 0;
+  }
+
+  .solution .row .col {
+    margin-top: 5%;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .solution .col-md {
+    padding-left: 20%;
+  }
+
+
+  .steps {
+    background-color: rgb(14, 15, 45);
+    color: white;
+  }
+
+  .steps h3 {
+    margin-top: 0.5em;
+  }
+
+  .steps .row {
+    padding-bottom: 5%;
+  }
+
+  .steps .h2-underline {
+    left: 0px;
+  }
+
+  .steps .col-md-6 {
+    margin-left: 9%;
+    margin-top: 5%;
+  }
+
+  .steps .col:first-of-type {
+    margin-left: 7%;
+  }
+
+  .steps .col:nth-of-type(2) {
+    margin-right: 7%;
+    margin-left: -5%;
+  }
+
+  .steps span {
+    margin-left: 4.1%;
+  }
+
+  .col-md-4 {
+    flex: 0 0 38.666667%;
+    max-width: 38%;
+  }
+
+  .steps .col-md-4 p {
+    font-size: 1.55em;
+    margin-top: 1.2em;
+    line-height: 1.2;
+  }
+
+  .steps .col-md-4 p:first-of-type {
+    font-weight: bold;
+    font-size: 1.8em;
+    margin-top: 1.2em;
+    line-height: 1.2;
+  }
+
+
+  .line {
+    width: 100%;
+    height: 10px;
+  }
+
+  .line-l1 {
+    border-bottom: 8px solid rgb(85, 117, 128);
+  }
+
+  .line-l2 {
+    border-right: 150px solid rgb(85, 117, 128);
+    background-color: rgb(206, 238, 235);
+  }
+
+  .line-l3 {
+    border-right: 375px solid rgb(85, 117, 128);
+    background-color: rgb(253, 241, 183);
+  }
+
+  .line-l4 {
+    border-right: 175px solid rgb(85, 117, 128);
+    background-color: rgb(251, 202, 161);
+  }
+
+  .line-l5 {
+    border-right: 375px solid rgb(85, 117, 128);
+    background-color: rgb(208, 210, 248);
+  }
+
+  .features {
+    background-color: rgb(248, 247, 243);
+    padding-left: 8%;
+  }
+
+  .features .row {
+    padding-top: 6%;
+    padding-bottom: 5%;
+  }
+
+  .features .col {
+    padding-left: 4%;
+  }
+
+  .features h3 {
+    font-size: 2.0em;
+  }
+
+  .features p {
+    font-size: 1.15em;
+    margin-top: 1.2em;
+    line-height: 1.2;
+  }
+
+  .features .col-md-8 h3 {
+    max-width: 90%;
+  }
+
+  .footer {
+    background-color: rgb(71, 76, 222);
+    padding-bottom: 2%;
+    padding-top: 6%;
+    color: white;
+  }
+
+  .footer h2 {
+    display: block;
+  }
+
+  .footer .d-flex {
+    padding-top: 1.5%;
+  }

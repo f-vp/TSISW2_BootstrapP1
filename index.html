@@ -1,445 +1,268 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
-  
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet"> 
-  
-    <title>SW2 - P1</title>
-  <style>
-      body {
-        background-color: white;
-        font-family: 'Nunito Sans', sans-serif;
-        overflow-x: hidden;
-      }
 
-      h1 {
-        font-size: 4.5em;
-        font-weight: bolder;
-        line-height: 1.05;
-      }
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 
-      h2 {
-        font-size: 3.2em;
-        font-weight: bold;
-        
-      }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
-      h3 {
-        font-size: 2.3em;
-        font-weight: bold;
-        
-      }
-    
-      p {
-        font-size: 1.5em;
-      }
-
-      button span {
-        margin-left: 4px;
-        margin-right: 4px;
-      }
-      .container-fluid{
-        padding: 0;
-      }
-      .logo {
-        margin-left: 8%;
-        margin-right: 8%;
-      }
-
-      .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-        background-color: rgb(71, 76, 222) !important;
-        font-weight: bold;
-      }
-      .btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
-        background-color: rgb(171, 218, 236) !important;
-        font-weight: bold;
-        color: black;
-        border: 1px solid rgb(171, 218, 236);
-        border-radius: 10px;
-      }
-      .form-inline {
-        border: 3px solid white;
-        background-color: white;
-        border-radius: 3px;
-      }
-      .form-control {
-        border: 2px solid white;
-      }
-
-      .splash {
-        margin-top: 6%;
-        margin-left: 8%;
-        margin-right: 8%;
-        color: rgb(30, 32, 93);
-      }
-
-      .splash img {
-        margin-top:12%;
-        margin-bottom: 1.5em;
-      }
-
-      .splash p {
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
-        line-height: 1.3;
-      }
-
-      .the-problematics-text{
-        background-image: url(img/problematics.png);
-        background-size: 100%;
-      }
-      .the-problematics-text{
-        padding-top: 25%;
-        padding-bottom: 25%;
-      }
-
-      .the-problematics-text h2{
-        margin-bottom: 0.4em;
-      }
-
-
-      .solution {
-        background-color:rgb(251, 202, 161);
-      }
-
-      .solution p{
-        line-height: 1.25;
-      }
-
-      .solution h2{
-        line-height: 1.1;
-      }
-
-      .solution .row .col {
-        margin-top: 5%;
-        margin-left: 8%;
-        margin-right: 8%;
-      }
-
-      .solution .col-md {
-        padding-left: 20%;
-      }
-
-      .steps {
-        background-color:rgb(14, 15, 45);
-        color: white;
-      }
-      .steps h2{
-        padding-left: 8.5%;
-        margin-top: 1.5em;
-      }
-
-      .steps h3{
-        margin-top: 0.5em;
-      }
-
-      .steps .row {
-        padding-bottom: 5%;
-      }
-
-      
-      .steps .col:first-of-type {
-        margin-left: 8%;
-      }
-
-      .steps .col:nth-of-type(2) {
-        margin-right: 8%;
-        margin-left: -5%;
-      }
-
-      .steps span {
-        margin-left: 4.1%;
-      }
-      
-      .steps .col p {
-        font-size: 1.7em;
-        margin-top: 1.2em;
-        line-height: 1.2;
-      }
-
-      .steps .col p:first-of-type {
-        font-weight: bold;
-        font-size: 1.8em;
-        margin-top: 1.2em;
-        line-height: 1.2;
-      }
-
-      .line{
-        width: 100%;
-        height: 10px;
-        border-bottom: 8px solid rgb(85, 117, 128);
-      }
-      .line-l2{
-        width: 100%;
-        height: 10px;
-        border-right: 150px solid rgb(85, 117, 128);
-        background-color: rgb(206, 238, 235);
-      }
-      .line-l3{
-        width: 100%;
-        height: 10px;
-        border-right: 375px solid rgb(85, 117, 128);
-        background-color: rgb(253, 241, 183)
-      }
-      .line-l4{
-        width: 100%;
-        height: 10px;
-        border-right: 175px solid rgb(85, 117, 128);
-        background-color: rgb(251, 202, 161)
-      }
-      .line-l5{
-        width: 100%;
-        height: 10px;
-        border-right: 375px solid rgb(85, 117, 128);
-        background-color: rgb(208, 210, 248)
-      }
-
-      .features {
-        background-color: rgb(248, 247, 243);
-        padding-left: 8%;
-      }
-      .features .col {
-        padding-left: 4%;
-      }
-
-      .features h2{
-        margin-top: 1.5em;
-      }
-
-      .features h3{
-        font-size: 2.0em;
-      }
-      .features p {
-        font-size: 1.1em;
-        margin-top: 1.2em;
-        line-height: 1.2;
-      }
-      .features .row {
-        padding-bottom: 5%;
-      }
-
-      .footer {
-        background-color: rgb(71, 76, 222);
-        padding-bottom: 8%;
-        padding-top: 6%;
-        color: white;
-      }
-      .footer .d-flex {
-        padding-top: 1.5%;
-      }
-      
-  </style>
+  <title>SW2 - P1</title>
 </head>
+
 <body>
-    <div class="container-fluid">
-        
-        <!-- logo e menu-->
-        <div class="logo">
-            <nav class="navbar">
-                <a class="navbar-brand" href="#">
-                    <img src="img/logo.png" alt="">
-                </a>
-                <form class="form-inline">
-                    <button class="btn btn-primary" type="button"><span>Join waitlist</span></button>
-                </form> 
-            </nav>
-        </div>
-        
-        <div class="splash">
-            <div class="row">
-                <div class="col">
-                    <h1>Agree to work<br>
-                        better together.</h1>
-                    <p>Murmur is a collaborative platform where teams create,<br> 
-                        test, scale, and share working agreements.</p>
-                    <form class="form-inline">
-                        <button class="btn btn-primary" type="button"><span>Join waitlist <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><rect fill="none" height="24" width="24"/><path d="M15,5l-1.41,1.41L18.17,11H2V13h16.17l-4.59,4.59L15,19l7-7L15,5z"/></svg></span></button>
-                    </form> 
-                </div>
-                <div class="col">
-                    <img src="img/splash.png" alt="front splash">
-                </div>
-            </div>
-        </div>
-        
-        <div class="the-problematics">
-            <div class="row">
-                <div class="col-md text-center">
-                    <div class="the-problematics-text">
-                        <h2>The way we're working isn't working.</h2>
-                        <p>Our inability to overcome these tensions make work harder than it<br> 
-                            has to be. Remote work is only making it harder.</p>
-                    </div>
-                </div>
-            </div>      
-        </div>
+  <div class="container-fluid">
 
-        <div class="solution">
-            <div class="row">
-                <div class="col">
-                    <h2>Murmur takes your team from<br>
-                        @#%! to a better way through<br>
-                        the magic of agreements</h2>
-                    <p>Agreements are consent-driven collaborative documents that detail<br>
-                        how a team agrees to work together. Teams that make agreements,<br>
-                        keep, and share agreements are more effective.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md">
-                    <img src="img/solution.png" alt="front splash">
-                </div>
-            </div>      
-        </div>
+    <!-- Logo e menu -->
+    <div class="logo">
+      <nav class="navbar">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="">
+        </a>
+        <form class="form-inline">
+          <button class="btn btn-primary" type="button"><span>Join waitlist</span></button>
+        </form>
+      </nav>
+    </div>
 
-        <div class="steps">
-            <div class="row">
-                <h2>Go from a blank page to something<br>
-                    everybody loves in five simple steps.</h2>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <span>
-                        <img src="img/step-1.png" alt="front splash">
-                    </span>
-                </div>
-                <div class="col">
-                    <div class="line"></div>
-                    <h3>Draft</h3>
-                    <p>Anyone on your team can draft and propose an<br>
-                    agreement.</p>
-                    <p>
-                        Start from scratch, use a template, or copy a public agreement<br>
-                        and make it your own.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <span>
-                        <img src="img/step-2.png" alt="front splash">
-                    </span>
-                </div>
-                <div class="col">
-                    <div class="line-l2"></div>
-                    <h3>Understand</h3>
-                    <p>Everyone has a chance to ask questions.</p>
-                    <p>
-                        Before we criticize, let's take a moment to understand what's<br>
-                        on the table and why.<br>
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <img src="img/step-3.png" alt="front splash">
-                </div>
-                <div class="col">
-                    <div class="line-l3"></div>
-                    <h3>Improve</h3>
-                    <p>Now it's time for suggestions.</p>
-                    <p>
-                        How can we make the agreement safer, or more<br>
-                        inclusive? The proposer has a chance to refine and revise.
-                    </p>        
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <img src="img/step-4.png" alt="front splash">
-                </div>
-                <div class="col">
-                    <div class="line-l4"></div>
-                    <h3>Finalize</h3>
-                    <p>Is it safe to try?</p>
-                    <p>
-                        This is where we flip the script on the usual top down<br>
-                        approach. Everyone on the team has the right to consent or<br>
-                        object. But we don't get stuck. Objections become resolutions<br>
-                        and teams move forward.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <img src="img/step-5.png" alt="front splash">
-                </div>
-                <div class="col">
-                    <div class="line-l5"></div>
-                    <h3>Refresh</h3>
-                    <p>Everyone can see what is working and what isn't.</p>
-                    <p>
-                        Each agreement has its own feedback rhythm, pulsing the<br>
-                        team on followthrough and satisfaction. When an agreement<br>
-                        expires, the team is prompted to make a choice to refresh,<br>
-                        renew, or retire it.
-                    </p>
-                </div>
-            </div>
+    <!-- Splash -->
+    <div class="splash">
+      <div class="row">
+        <div class="col-md-5">
+          <h1>Agree to work better</h1>
+          <div class="h1-underline">
+            <h1>together.</h1>
+            <img class="underline" src="img/underline.png" alt="">
+          </div>
+          <p>Murmur is a collaborative platform where teams create,
+            test, scale, and share working agreements.</p>
+          <form class="form-inline">
+            <button class="btn btn-primary" type="button"><span>Join waitlist <svg xmlns="http://www.w3.org/2000/svg"
+                  enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF">
+                  <rect fill="none" height="24" width="24" />
+                  <path d="M15,5l-1.41,1.41L18.17,11H2V13h16.17l-4.59,4.59L15,19l7-7L15,5z" />
+                </svg></span></button>
+          </form>
         </div>
+        <div class="col">
+          <img src="img/splash.png" alt="front splash">
+        </div>
+      </div>
+    </div>
 
-        <div class="features">
-            <div class="row">
-                <h2>Features that keep your ideas moving.</h2>
+    <!-- Problemática -->
+    <div class="the-problematics">
+      <div class="row">
+        <div class="col-md text-center">
+          <div class="the-problematics-text">
+            <h2>The way we're working</h2>
+            <div class="h2-underline">
+              <h2>isn't working.</h2>
+              <img class="underline" src="img/underline.png" alt="">
             </div>
-            <div class="row">
-                <div class="col-sm">
-                    <img src="img/feature-1.png" alt="Feature 1.">
-                    <h3>Move through a<br>
-                        proven process</h3>
-                    <p>Murmur guides teams through a proven<br>
-                        process that is inclusive, safe, and fast. It<br>
-                        was designed with remote teams and<br>
-                        busy teams in mind, so it keeps things<br>
-                        moving asynchronously.
-                        </p>
-                </div>
-                <div class="col-sm col">
-                    <img src="img/feature-2.png" alt="Feature 2.">
-                    <h3>Stop Reinventing the<br>
-                        wheel
-                    </h3>
-                    <p>Murmur provides templates for every<br>
-                        major agreement type and offers access<br>
-                        to public agreements from some of the<br>
-                        world's most famous teams. No more<br>
-                        blank page anxiety.
-                        </p>
-                </div>
-                <div class="col-sm col">
-                    <img src="img/feature-3.png" alt="Feature 3.">
-                    <h3>Keep what works<br>
-                        ditch what doesn't</h3>
-                    <p>Test and scale breakthrough practices<br>
-                        and behaviors. Murmur lets you see<br>
-                        what's working and what isn't. The system<br>
-                        collects and radiates feedback constantly<br>
-                        —pushing teams to get better every day.
-                        </p>
-                </div>
-            </div>     
+            <div class="row align-items-center">
+              <div class="col-md"></div>
+              <div class="col-md-5">
+                <p>Our inability to overcome these tensions make work harder than it
+                  has to be. Remote work is only making it harder.</p>
+              </div>
+              <div class="col-md"></div>
+            </div>
+          </div>
         </div>
-        <div class="footer">
-            <div class="row">
-                <div class="col-md text-center justify-content-center">
-                    <h2>Interested?</h2>
-                    <h2>Join our waitlist for early access.</h2>
-                    <div class="d-flex justify-content-center">
-                        <form class="form-inline">
-                            <input type="text" class="form-control">  
-                            <div class="input-group-append">
-                              <button class="btn btn-secondary rounded" type="button">Join waitlist</button>
-                            </div>
-                        </form>
-                    </div>
-                </form>
-                </div>
-            </div>  
+      </div>
+
+      <!-- Solução -->
+      <div class="solution">
+        <div class="row">
+          <div class="col col-md-5">
+            <h2>Murmur takes your team from
+              <div class="h2-underline">
+                <h2>@#%!</h2>
+                <img class="underline" src="img/underline3.png" alt="">
+              </div>
+              to a better way through
+              the magic of agreements</h2>
+            <p>Agreements are consent-driven collaborative documents that detail
+              how a team agrees to work together. Teams that make agreements,
+              keep, and share agreements are more effective.</p>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-md">
+            <img src="img/solution.png" alt="front splash">
+          </div>
+        </div>
+      </div>
+
+      <!-- Steps -->
+      <div class="steps">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Go from a blank page to something</h2>
+            <div class="h2-underline">
+              <h2>everybody loves</h2>
+              <img class="underline" src="img/underline2.png" alt="">
+            </div>
+            <h2>in five simple steps.</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-md-5">
+            <span>
+              <img src="img/step-1.png" alt="front splash">
+            </span>
+          </div>
+          <div class="col-md-4">
+            <div class="line line-l1"></div>
+            <h3>Draft</h3>
+            <p>Anyone on your team can draft and propose an agreement.</p>
+            <p>
+              Start from scratch, use a template, or copy a public agreement
+              and make it your own.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-md-5">
+            <span>
+              <img src="img/step-2.png" alt="front splash">
+            </span>
+          </div>
+          <div class="col-md-4">
+            <div class="line line-l2"></div>
+            <h3>Understand</h3>
+            <p>Everyone has a chance to ask questions.</p>
+            <p>
+              Before we criticize, let's take a moment to understand what's
+              on the table and why.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-md-5">
+            <img src="img/step-3.png" alt="front splash">
+          </div>
+          <div class="col-md-4">
+            <div class="line line-l3"></div>
+            <h3>Improve</h3>
+            <p>Now it's time for suggestions.</p>
+            <p>
+              How can we make the agreement safer, or more
+              inclusive? The proposer has a chance to refine and revise.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-md-5">
+            <img src="img/step-4.png" alt="front splash">
+          </div>
+          <div class="col-md-4">
+            <div class="line line-l4"></div>
+            <h3>Finalize</h3>
+            <p>Is it safe to try?</p>
+            <p>
+              This is where we flip the script on the usual top down
+              approach. Everyone on the team has the right to consent or
+              object. But we don't get stuck. Objections become resolutions
+              and teams move forward.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-md-5">
+            <img src="img/step-5.png" alt="front splash">
+          </div>
+          <div class="col-md-4">
+            <div class="line line-l5"></div>
+            <h3>Refresh</h3>
+            <p>Everyone can see what is working and what isn't.</p>
+            <p>
+              Each agreement has its own feedback rhythm, pulsing the
+              team on followthrough and satisfaction. When an agreement
+              expires, the team is prompted to make a choice to refresh,
+              renew, or retire it.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features -->
+      <div class="features">
+        <div class="row">
+          <h2>Features that </h2>
+            <div class="h2-underline">
+              <h2>keep your ideas moving.</h2>
+              <img class="underline" src="img/underline4.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md">
+            <div class="col-md-8">
+              <img src="img/feature-1.png" alt="Feature 1.">
+              <h3>Move through a
+                proven process</h3>
+              <p>Murmur guides teams through a proven
+                process that is inclusive, safe, and fast. It
+                was designed with remote teams and
+                busy teams in mind, so it keeps things
+                moving asynchronously.
+              </p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="col-md-8">
+              <img src="img/feature-2.png" alt="Feature 2.">
+              <h3>Stop Reinventing the
+                wheel
+              </h3>
+              <p>Murmur provides templates for every
+                major agreement type and offers access
+                to public agreements from some of the
+                world's most famous teams. No more
+                blank page anxiety.
+              </p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="col-md-8">
+              <img src="img/feature-3.png" alt="Feature 3.">
+              <h3>Keep what works
+                ditch what doesn't</h3>
+              <p>Test and scale breakthrough practices
+                and behaviors. Murmur let's you see
+                what's working & what isn't. The system
+                collects and radiates feedback constantly
+                —pushing teams to get better every day.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="row">
+          <div class="col-md text-center justify-content-center">
+            <h2>Interested?</h2>
+            <h2>Join our waitlist for early access.</h2>
+            <div class="d-flex justify-content-center">
+              <form class="form-inline">
+                <input type="text" class="form-control">
+                <div class="input-group-append">
+                  <button class="btn btn-secondary rounded" type="button">Join waitlist</button>
+                </div>
+              </form>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
 </body>

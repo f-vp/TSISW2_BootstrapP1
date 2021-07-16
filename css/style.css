@@ -13,7 +13,7 @@ body {
     display: inline;
   }
 
-  .h1-underline {
+  .underline-h2 {
     position: relative;
     display: inline-block;
     left: 20px;
@@ -27,7 +27,7 @@ body {
     display: inline;
   }
 
-  .h2-underline {
+  .underline-h2 {
     position: relative;
     display: inline-block;
     left: 10px;
@@ -42,7 +42,7 @@ body {
     max-width: none;
   }
 
-  .h2-underline .underline {
+  .underline-h2 .underline {
     position: absolute;
     right: 0%;
     top: 80%;
@@ -159,11 +159,11 @@ body {
     max-width: 40%;
   }
 
-  .solution .h2-underline h2 {
+  .solution .underline-h2 h2 {
     font-size: 1em;
   }
 
-  .solution .h2-underline{
+  .solution .underline-h2{
     left: 0;
   }
 
@@ -191,7 +191,7 @@ body {
     padding-bottom: 5%;
   }
 
-  .steps .h2-underline {
+  .steps .underline-h2 {
     left: 0px;
   }
 
